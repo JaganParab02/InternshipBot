@@ -5,6 +5,10 @@ from internshipHunterBot import scrape_jobs, rank_jobs_by_resume_similarity_from
 app = Flask(__name__)
 CORS(app)  # allow React frontend to access backend
 
+@app.route("/", methods=["POST"])
+def home():
+    return jsonify("Welcome to the Internship Hunter Bot API!"), 200
+
 @app.route("/scrape", methods=["POST"])
 def scrape():
     data = request.json
