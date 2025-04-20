@@ -1,0 +1,5 @@
+requireselenium
+webdriver-manager
+sentence-transformers
+PyMuPDF
+PyPDF2
